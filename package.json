@@ -1,0 +1,26 @@
+{
+  "name": "zl-gitckt-specdir",
+  "version": "1.0.0",
+  "description": "node开发的,一个可以检出git仓库指定目录的模块",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pak": "rollup src/main.js --file index.js --format umd --name zl-nodefs",
+    "tsc": "tsc -d --allowJS index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zl-fire/zl-gitckt-specdir.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zl-fire/zl-gitckt-specdir/issues"
+  },
+  "homepage": "https://github.com/zl-fire/zl-gitckt-specdir#readme",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "zl-nodefs": "^1.1.2"
+  }
+}
