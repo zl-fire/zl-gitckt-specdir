@@ -9,7 +9,7 @@ node开发的,一个可以检出git仓库指定目录的模块
    
 ```js
 let gitcktSpecdir = require("zl-gitckt-specdir");
-// 从如下gitUrl地址拉取项目目录indexDB-demo
+// 从如下gitUrl地址拉取项目目录indexDB-demo,目录保存位置为saveDir，默认为当前命令执行时所在目录
 gitcktSpecdir({
     gitUrl: 'https://gitee.com/zhangluzhanglu/zl-pro-demo-code.git',
     dirName: 'indexDB-demo',
@@ -34,6 +34,11 @@ gitcktSpecdir({
 完整调用：zl-gitpull gitUrl=https://gitee.com/zhangluzhanglu/zl-pro-demo-code.git##dirName=indexDB-demo##saveDir=./
 
 ```
+## 调用示例说明
+1. 调用时，会在指向位置（默认当前目录）生成临时目录
+2. 目录拉取成后，临时目录会删除掉
+   ![1](/assets/1_v6ecw2r1d.png)
+   ![2](/assets/2.png)
 
 ## 完整参数说明
 ```js
