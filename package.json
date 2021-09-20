@@ -8,6 +8,9 @@
     "pak": "rollup src/main.js --file index.js --format umd --name zl-nodefs",
     "tsc": "tsc -d --allowJS index.js"
   },
+  "bin": {
+    "zl-gitpull": "./bin/main.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zl-fire/zl-gitckt-specdir.git"
